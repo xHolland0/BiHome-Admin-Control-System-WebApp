@@ -36,7 +36,7 @@ namespace BiHome.Models.Database.Product
 
         public virtual Brand Brand { get; set; }
 
-        public virtual Type Type{ get; set; }
+        public virtual Genre Type{ get; set; }
 
         public virtual Color Color { get; set; }
 

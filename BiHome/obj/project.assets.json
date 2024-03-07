@@ -7868,11 +7868,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\BiHome\\BiHome\\BiHome.csproj",
+      "projectUniqueName": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\BiHome-Admin-Control-System-WebApp\\BiHome\\BiHome.csproj",
       "projectName": "BiHome",
-      "projectPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\BiHome\\BiHome\\BiHome.csproj",
+      "projectPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\BiHome-Admin-Control-System-WebApp\\BiHome\\BiHome.csproj",
       "packagesPath": "C:\\Users\\okanc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\BiHome\\BiHome\\obj\\",
+      "outputPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\BiHome-Admin-Control-System-WebApp\\BiHome\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\okanc\\AppData\\Roaming\\NuGet\\NuGet.Config",

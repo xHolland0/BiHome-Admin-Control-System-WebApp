@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8g6Ng/p65ywOVKZK0GZPtteeufNyjPX9CJA4J1M0TjetGIF12nVO3h5mnP8i1aPFikGQmPUKAQW5RItaTN2Jxg==",
+  "dgSpecHash": "USiQdZRfIwp++Vmy1XDpd+EzZdEQhKeeKhX7IKUBYN6Mi9iJie/WGtPAv72zL6qygyIb35IfsMeX8yNI0/dxvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\BiHome\\BiHome\\BiHome.csproj",
+  "projectFilePath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\BiHome-Admin-Control-System-WebApp\\BiHome\\BiHome.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\okanc\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\okanc\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
