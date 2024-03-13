@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\okanc\\OneDrive\\Masaüstü\\BiHome-Admin-Control-System-WebApp\\BiHome\\BiHome.csproj": {}
+    "C:\\Users\\okanc\\OneDrive\\Masaüstü\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\BiHome.csproj": {}
   },
   "projects": {
-    "C:\\Users\\okanc\\OneDrive\\Masaüstü\\BiHome-Admin-Control-System-WebApp\\BiHome\\BiHome.csproj": {
+    "C:\\Users\\okanc\\OneDrive\\Masaüstü\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\BiHome.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\BiHome-Admin-Control-System-WebApp\\BiHome\\BiHome.csproj",
+        "projectUniqueName": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\BiHome.csproj",
         "projectName": "BiHome",
-        "projectPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\BiHome-Admin-Control-System-WebApp\\BiHome\\BiHome.csproj",
+        "projectPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\BiHome.csproj",
         "packagesPath": "C:\\Users\\okanc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\BiHome-Admin-Control-System-WebApp\\BiHome\\obj\\",
+        "outputPath": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\okanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,7 +42,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.3, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
@@ -50,27 +50,27 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.3, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
