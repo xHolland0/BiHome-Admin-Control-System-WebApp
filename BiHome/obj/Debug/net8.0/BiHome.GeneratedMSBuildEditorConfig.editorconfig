@@ -26,6 +26,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\okanc\OneDrive\Masaüstü\Git Uploads\BiHome-Admin-Control-System-WebApp\BiHome
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Areas/Admin/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Areas/Admin/Views/Shared/_Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,8 +58,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Views/Home/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Views/Home/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Views/Shared/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -49,6 +89,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-73mb3g5yfm
 
 [C:/Users/okanc/OneDrive/Masaüstü/Git Uploads/BiHome-Admin-Control-System-WebApp/BiHome/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

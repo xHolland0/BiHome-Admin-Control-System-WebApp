@@ -1,13 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace BiHome.ViewModel.Auth
 {
     public class VM_SignUp
     {
-        public VM_SignUp()
-        {
-
-        }
+        public VM_SignUp(){}
         public VM_SignUp(string username, string email, string phone, string password, string passwordConfirm)
         {
             Username = username;
@@ -30,11 +28,13 @@ namespace BiHome.ViewModel.Auth
 
         [Required(ErrorMessage = "Telefon alanı boş bıraklılamaz.")]
         [Display(Name = "Telefon:")]
+        [DataType(DataType.PhoneNumber)]
         public string Phone { get; set; }
 
 
         [Required(ErrorMessage = "Şifre alanı boş bıraklılamaz.")]
         [Display(Name = "Şifre:")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
 
 
@@ -42,6 +42,7 @@ namespace BiHome.ViewModel.Auth
         [Compare(nameof(Password), ErrorMessage = "Girmiş olduğunuz şifre aynı değil.")]
         [Required(ErrorMessage = "Şifre Tekrar alanı boş bıraklılamaz.")]
         [Display(Name = "Şifre Tekrar:")]
+        [DataType(DataType.Password)]
         public string PasswordConfirm { get; set; }
     }
 }

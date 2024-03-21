@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BiHome</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BiHome.styles.css" asp-append-version="true" />
+
+
+
+
+    <!-- ======= Custom Links ======= -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="@Html.Raw("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css")">
+    <link rel="stylesheet" href="~/assets/css/theme.css" />
+    <!-- ======= Custom Links ======= -->
+</head>
+<body class=" bg-white">
+
+    <!-- ======= Navbar ======= -->
+    <partial name="_Sidebar" />
+    <!-- End Navbar -->
+
+
+    <main class="container">
+        <div id="main-wrapper" class=" flex">
+            @RenderBody()
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script src="./assets/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="./assets/libs/iconify-icon/dist/iconify-icon.min.js"></script>
+    <script src="./assets/js/sidebarmenu.js"></script>
+
+
+
+    <script src="./assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="./assets/js/dashboard.js"></script>
+</body>
+</html>

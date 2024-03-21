@@ -1,0 +1,72 @@
+﻿@using System.Security.Claims
+
+
+	<!-- Start Header/Navigation -->
+	<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+		<div class="container">
+			<a class="navbar-brand" href="index.html">BiHome<span>.</span></a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+				aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarsFurni">
+				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+					<li class="nav-item">
+						<a class="nav-link" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="shop.html">Mağaza</a></li>
+					<li><a class="nav-link" href="about.html">Hakkında</a></li>
+					<li><a class="nav-link" href="contact.html">İletişim</a></li>
+				</ul>
+ 
+ 			@if (User.Identity!.IsAuthenticated)
+			{
+				<div class="dropdown ms-5">
+					<i class="fa-solid fa-cart-shopping fa-2x p-3" style="color: #ffffff;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					</i>
+
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">1x Pamuklu Nevresim</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#"><Span>Fiyat:</Span> ₺800</a></li>
+					</ul>
+				</div>
+
+
+
+				<div class="dropdown ms-2">
+					@{
+						string userpp = @User.Claims.FirstOrDefault(x => x.Type == "ProfilePicture") != null ? User.Claims.First(x => x.Type == "ProfilePicture").Value : "DefaultUserPicture.jpg";
+					}
+					<img src="~/Image/UserImages/@userpp" alt="mdo" width="32" height="32" class="rounded-circle" style="object-fit: cover;" data-bs-toggle="dropdown" aria-expanded="false">
+
+					<span class="fs-6 link-light mt-2"> @User.Identity.Name</span>
+
+
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" >Ayarlar</a></li>
+						<li><a class="dropdown-item" >Şifre Değiştir</a></li>
+						<li><a asp-area="Admin" asp-controller="Home" asp-action="Index" class="dropdown-item">Admin Sayfası</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item bg-danger" asp-area=""  asp-controller="User" asp-action="LogOut">Çıkış Yap</a></li>
+					</ul>
+				</div>
+			} 
+
+			else
+			{
+				<div class="d-flex gap-3">
+					<li style="list-style:none;"><a asp-area="" asp-controller="Home" asp-action="SignIn" class="btn alert-dark">Giriş Yap</a></li>
+					<li style="list-style:none;"><a asp-area="" asp-controller="Home" asp-action="SignUp" class="btn alert-dark">Kayıt Ol</a></li>
+				</div>
+			}
+			
+			</div>
+		</div>
+
+	</nav>
+	<!-- End Header/Navigation -->

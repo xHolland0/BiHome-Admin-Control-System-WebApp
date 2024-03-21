@@ -6,7 +6,7 @@ using Newtonsoft.Json.Bson;
 
 namespace BiHome.Models
 {
-    public class BiHomeContext:IdentityDbContext<AppUser, AppRole, string>
+    public class BiHomeContext : IdentityDbContext<AppUser, AppRole, string>
     {
         public BiHomeContext(DbContextOptions<BiHomeContext> options) : base(options) { }
 

@@ -3,6 +3,7 @@ using BiHome.Localizations;
 using BiHome.Models;
 using BiHome.Models.Identity;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.FileProviders;
 using System;
 
 namespace BiHome.Extensions
@@ -11,7 +12,11 @@ namespace BiHome.Extensions
     {
         public static void AddIdentityWithExtensions(this IServiceCollection services)
         {
-            services.AddIdentity<AppUser, AppRole>(options =>
+			IFileProvider physicalProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory());
+			services.AddSingleton<IFileProvider>(physicalProvider);
+
+
+			services.AddIdentity<AppUser, AppRole>(options =>
             {
                 //Kullanıcı Tarafında Yapılan Ayarlar (options)
                 options.User.RequireUniqueEmail = true;
@@ -37,3 +42,5 @@ namespace BiHome.Extensions
         }
     }
 }
+
+
