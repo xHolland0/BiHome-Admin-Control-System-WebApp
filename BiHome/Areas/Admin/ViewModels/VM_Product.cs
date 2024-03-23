@@ -24,7 +24,7 @@ namespace BiHome.Areas.Admin.ViewModels
 
         [DisplayName("Resim")]
         [Required(ErrorMessage = "Resim alanı boş bırakılamaz.")]
-        public string? Image { get; set; }
+        public IFormFile Image { get; set; }
 
         public short? Discount { get; set; }
         public bool? IS_POPULER { get; set; }
@@ -35,16 +35,17 @@ namespace BiHome.Areas.Admin.ViewModels
 
         public int CategoryId { get; set; }
         public int BrandId { get; set; }
-        public int TypeId { get; set; }
+        public int KindId { get; set; }
         public int ColorId { get; set; }
 
 
-        public List<Product> Products { get; set; }
 
-        //public List<SelectListItem> CategorySelectList { get; set; } = new List<SelectListItem>();
-        //public List<SelectListItem> BrandSelectList { get; set; } = new List<SelectListItem>();
-        //public List<SelectListItem> TypeSelectList { get; set; } = new List<SelectListItem>();
-        //public List<SelectListItem> ColorSelectList { get; set; } = new List<SelectListItem>();
+        public List<SelectListItem> CategorySelectList { get; set; } = new List<SelectListItem>();
+        public List<SelectListItem> BrandSelectList { get; set; } = new List<SelectListItem>();
+        public List<SelectListItem> KindSelectList { get; set; } = new List<SelectListItem>();
+        public List<SelectListItem> ColorSelectList { get; set; } = new List<SelectListItem>();
+
+        public List<Product> Products { get; set; }
 
     }
 }

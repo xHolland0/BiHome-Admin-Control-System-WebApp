@@ -22,7 +22,7 @@ namespace BiHome.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("BiHome.Models.Database.Product.Brand", b =>
+            modelBuilder.Entity("BiHome.Models.Database.Const.Kind", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,9 +30,22 @@ namespace BiHome.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Image")
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Kinds");
+                });
+
+            modelBuilder.Entity("BiHome.Models.Database.Product.Brand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -126,6 +139,9 @@ namespace BiHome.Migrations
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("KindId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -134,9 +150,6 @@ namespace BiHome.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("StockQuantity")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TypeId")
                         .HasColumnType("int");
 
                     b.Property<string>("URL")
@@ -150,7 +163,7 @@ namespace BiHome.Migrations
 
                     b.HasIndex("ColorId");
 
-                    b.HasIndex("TypeId");
+                    b.HasIndex("KindId");
 
                     b.ToTable("Products");
                 });
@@ -456,9 +469,9 @@ namespace BiHome.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BiHome.Models.Database.Product.Genre", "Type")
+                    b.HasOne("BiHome.Models.Database.Const.Kind", "Kind")
                         .WithMany()
-                        .HasForeignKey("TypeId")
+                        .HasForeignKey("KindId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -468,7 +481,7 @@ namespace BiHome.Migrations
 
                     b.Navigation("Color");
 
-                    b.Navigation("Type");
+                    b.Navigation("Kind");
                 });
 
             modelBuilder.Entity("BiHome.Models.Database.Product.Supplier", b =>

@@ -32,7 +32,7 @@
     <Folder Include="wwwroot\assets\libs\tailwindcss\node_modules\postcss-load-config\src\" />
     <Folder Include="wwwroot\assets\libs\tailwindcss\src\" />
     <Folder Include="wwwroot\assets\libs\tailwindcss\types\generated\" />
-    <Folder Include="wwwroot\ProductImages\" />
+    <Folder Include="wwwroot\Image\ProductImages\" />
   </ItemGroup>
 
   <ItemGroup>

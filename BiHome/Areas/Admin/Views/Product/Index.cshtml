@@ -1,10 +1,16 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
 }
 
+@model VM_Product
 
-<table class="table">
+
+<div class="mt-5">
+    <a class="btn bg-success" asp-controller="Product" asp-action="Create">Ürün Ekle</a>
+</div>
+
+
+<table class="table mt-5">
     <thead>
         <tr>
             <th scope="col">#</th>
@@ -27,22 +33,25 @@
     <tbody>
 
         <tr>
-            <th scope="row">1</th>
-            <td>Pamuklu Nevresim</td>
-            <td>Muzzam kalitede nevresimler işte burda</td>
-            <td>400$</td>
-            <td>2400</td>
-            <td>20%</td>
-            <td>Evet</td>
-            <td>www.trendyol.com</td>
+            @foreach (var product in Model.Products)
+            {
+                <th scope="row">1</th>
+                <td>@product.Name</td>
+                <td>@product.Description</td>
+                <td>@product.Price TL</td>
+                <td>@product.StockQuantity</td>
+                <td>@product.Discount %</td>
+                <td>Evet</td>
+                <td>@product.URL</td>
 
-            <td>Kategori Id</td>
-            <td>Marka Id</td>
-            <td>Tür Id</td>
-            <td>Renk Id</td>
+                <td>@product.CategoryId</td>
+                <td>@product.BrandId</td>
+                <td>@product.KindId</td>
+                <td>@product.ColorId</td>
 
-            <td><button type="button" class="btn bg-danger">Sil</button></td>
-            <td><button type="button" class="btn bg-warning">Güncelle</button></td>
+                <td><a> @Html.ActionLink("Sil", "Delete", new { id = product.Id }, new { @class = "btn bg-danger", onclick = "return confirm('Gerçekten silmek istiyor musunuz?')" })</a></td>
+                <td><a class="btn bg-warning" asp-controller="Product" asp-action="Update">Güncelle</a></td>
+            }
         </tr>
 
 

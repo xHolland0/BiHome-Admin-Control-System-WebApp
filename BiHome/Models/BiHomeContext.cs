@@ -1,6 +1,8 @@
-﻿using BiHome.Models.Database.Product;
+﻿using BiHome.Models.Database.Const;
+using BiHome.Models.Database.Product;
 using BiHome.Models.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.Build.Construction;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Bson;
 
@@ -14,6 +16,7 @@ namespace BiHome.Models
         public DbSet <Brand> Brands{ get; set; }
         public DbSet <Category> Categories { get; set; }
         public DbSet <Color> Colors { get; set; }
+        public DbSet <Kind> Kinds { get; set; }
         public DbSet <Supplier> Suppliers { get; set; }
         public DbSet <Genre> Genres { get; set; }
 

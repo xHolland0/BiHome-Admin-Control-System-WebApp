@@ -28,7 +28,7 @@ namespace BiHome.ViewModel
 
         [DisplayName("Resim")]
         [Required(ErrorMessage = "Resim alanı boş bırakılamaz.")]
-        public string? Image { get; set; }
+        public IFormFile Image { get; set; }
 
 
 

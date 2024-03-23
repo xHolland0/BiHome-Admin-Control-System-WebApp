@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+@model VM_Product
+
+<div class="container">
+    <form class="mt-5" asp-controller="Product" asp-action="Create" method="post" enctype="multipart/form-data">
+        <h1 class="fw-bold" style="font-size=20px:">Ürün Ekleme</h1>
+
+        <div class="mb-3">
+            <label for="ProductName" class="form-label">Ürün İsmi</label>
+            <input asp-for="Name" type="text" class="form-control" id="ProductName" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="ProductDescription" class="form-label">Açıklama</label>
+            <textarea asp-for="Description" class="form-control" id="ProductDescription" rows="3"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="ProductPrice" class="form-label">Ürün Fiyatı</label>
+            <input asp-for="Price" type="text" class="form-control" id="ProductPrice">
+        </div>
+
+        <div class="mb-3">
+            <label for="ProductStokQuantity" class="form-label">Ürün Stok Sayısı</label>
+            <input asp-for="StockQuantity" type="number" class="form-control" id="ProductStokQuantity">
+        </div>
+
+        <div class="mb-3">
+            <label for="ProductDiscount" class="form-label">Ürün İndirim Oranı</label>
+            <input asp-for="Discount" type="number" class="form-control" id="ProductDiscount">
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="ProductIsPopuler">
+            <label asp-for="IS_POPULER" class="form-check-label" for="ProductIsPopuler">Popüler Ürün</label>
+        </div>
+
+        <div class="mb-3">
+            <label for="ProductUrl" class="form-label">Ürün URL</label>
+            <input asp-for="URL" type="text" class="form-control" id="ProductUrl">
+        </div>
+
+        <div class="mb-3">
+            <label for="ProductImage" class="form-label">Ürün Resmi</label>
+            <input type="File" class="form-control" id="ProductImage" asp-for="Image">
+        </div>
+
+        <div>
+            <label asp-for="CategoryId" class="form-label">Kategori</label>
+            <select asp-for="CategoryId" asp-items="@ViewBag.SelectListCategory" class="form-select">
+                <option>Seçiniz</option>
+            </select>
+        </div>
+
+        <div>
+            <label asp-for="BrandId" class="form-label">Marka</label>
+            <select asp-for="BrandId" class="form-select" asp-items="@ViewBag.SelectListBrand">
+                <option>Seçiniz</option>
+            </select>
+        </div>
+
+
+        <div>
+            <label asp-for="KindId" class="form-label">Tür</label>
+            <select asp-for="KindId" class="form-select" asp-items="@ViewBag.SelectListKind">
+                <option>Seçiniz</option>
+            </select>
+        </div>
+
+        <div>
+            <label asp-for="ColorId" class="form-label">Renk</label>
+            <select asp-for ="ColorId" class="form-select" asp-items="@ViewBag.SelectListColor">
+                <option>Seçiniz</option>
+            </select>
+        </div>
+
+
+
+
+
+        <button type="submit" class="btn mt-5 bg-dark">Kaydet</button>
+    </form>
+</div>

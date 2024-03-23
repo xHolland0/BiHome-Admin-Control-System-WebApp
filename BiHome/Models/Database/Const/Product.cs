@@ -1,4 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using BiHome.Models.Database.Const;
+using Microsoft.IdentityModel.Tokens;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -15,7 +16,7 @@ namespace BiHome.Models.Database.Product
         public decimal Price { get; set; }
 
         public int StockQuantity { get; set; }
-        public string? Image { get; set; }
+        public IFormFile Image { get; set; }
 
 
 
@@ -27,7 +28,7 @@ namespace BiHome.Models.Database.Product
 
         public int CategoryId { get; set; }
         public int BrandId { get; set; }
-        public int TypeId { get; set; }
+        public int KindId { get; set; }
         public int ColorId { get; set; }
 
 
@@ -36,7 +37,7 @@ namespace BiHome.Models.Database.Product
 
         public virtual Brand Brand { get; set; }
 
-        public virtual Genre Type{ get; set; }
+        public virtual Kind Kind{ get; set; }
 
         public virtual Color Color { get; set; }
 
