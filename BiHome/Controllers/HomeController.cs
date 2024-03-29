@@ -9,6 +9,9 @@ using BiHome.Models;
 using BiHome.ViewModel.Auth;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using BiHome.Extensions;
+using BiHome.ViewModel;
+using Microsoft.EntityFrameworkCore;
+using BiHome.Models.Database.Product;
 
 
 namespace BiHome.Controllers
@@ -19,7 +22,7 @@ namespace BiHome.Controllers
 
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
-        private readonly BiHomeContext _biHomeContext;
+        private readonly BiHomeContext _context;
 
 
 
@@ -28,13 +31,44 @@ namespace BiHome.Controllers
             _logger = logger;
             _userManager = userManager;
             _signInManager = signInManager;
-            _biHomeContext = biHomeContext; 
+            _context = biHomeContext; 
         }
 
         public IActionResult Index()
         {
             return View();
         }
+
+
+        public async Task<IActionResult> Shop()
+        {
+            VM_Shop shopViewModel = new VM_Shop();
+            shopViewModel.Products = _context.Products.ToList();
+
+            shopViewModel.Categories = _context.Categories.ToList();
+            shopViewModel.Brands = _context.Brands.ToList();
+            shopViewModel.Colors = _context.Colors.ToList();
+            shopViewModel.Kinds = _context.Kinds.ToList();
+
+
+            return View(shopViewModel);
+        }
+
+
+        public async Task<IActionResult> Detail(int id)
+        {
+            VM_ProductDetail productDetail = new VM_ProductDetail();
+			productDetail.Product = _context.Products.Include(x => x.Category).Include(x=>x.Brand).Include(x=>x.Color).Include(x=>x.Kind).FirstOrDefault(x => x.Id == id);
+
+
+            if(productDetail.Product == null)
+            {
+				return NotFound();
+			}
+
+			return View(productDetail);
+		}
+
 
         public IActionResult Privacy()
         {

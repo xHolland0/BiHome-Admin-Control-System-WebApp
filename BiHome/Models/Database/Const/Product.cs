@@ -16,7 +16,7 @@ namespace BiHome.Models.Database.Product
         public decimal Price { get; set; }
 
         public int StockQuantity { get; set; }
-        public IFormFile Image { get; set; }
+        public String? Image { get; set; }
 
 
 
@@ -42,5 +42,6 @@ namespace BiHome.Models.Database.Product
         public virtual Color Color { get; set; }
 
         public virtual List<Supplier> Suppliers { get; set; }
+
     }
 }

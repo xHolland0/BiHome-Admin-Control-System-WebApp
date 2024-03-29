@@ -4,6 +4,7 @@ using BiHome.Models;
 using BiHome.Models.Database.Const;
 using BiHome.Models.Database.Product;
 using BiHome.Models.Identity;
+using BiHome.ViewModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -11,10 +12,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace BiHome.Areas.Admin.Controllers
 {
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class ProductController : Controller
     {
@@ -96,7 +98,7 @@ namespace BiHome.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            VM_Product model = new VM_Product();
+            VM_EditProduct model = new VM_EditProduct();
             model.Products = _context.Products.ToList();
             return View(model);
         }
@@ -112,7 +114,7 @@ namespace BiHome.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(VM_Product request, List<IFormFile> ProdImages)
+        public async Task<IActionResult> Create(VM_EditProduct request, List<IFormFile> ProdImages)
         {
 
                 Product product = new Product()
@@ -167,24 +169,73 @@ namespace BiHome.Areas.Admin.Controllers
         }
 
 
-        public async Task<IActionResult> Update(VM_Product request)
+        [HttpGet]
+        public async Task<IActionResult> Update(VM_EditProduct request,int id)
         {
+            Product newProduct = _context.Products.Include(x=>x.Category).Include(x => x.Kind).Include(x => x.Color).Include(x => x.Brand).FirstOrDefault(x=>x.Id == id);
+              
+            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(request.Image.FileName);
 
-            Product product = new Product()
+
+			Product product = new Product()
             {
+                Id = request.Id,
                 Name = request.Name,
                 Description = request.Description,
                 Price = request.Price,
-                StockQuantity = request.StockQuantity,
                 Discount = request.Discount,
-                IS_POPULER = request.IS_POPULER,
+                IS_POPULER = bool.Parse(request.IS_POPULER.ToString()),
+                StockQuantity = request.StockQuantity,
+                URL = request.URL,
+                CREATED_DATE = DateTimeOffset.UtcNow,
+                CategoryId = request.CategoryId,
+                KindId = request.KindId,
+                BrandId = request.BrandId,
+                ColorId = request.ColorId,
+                Image = fileName
+            };
+
+            return View(product);
+        }
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> Update(VM_EditProduct request)
+        {
+            request.CategorySelectList = getCategoriesItems();
+            request.ColorSelectList = getColorsItems();
+            request.KindSelectList = getKindsItems();
+            request.BrandSelectList = getBrandsItems();
+
+
+            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(request.Image.FileName);
+            if (request.Image != null)
+            {
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "product", fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await request.Image.CopyToAsync(stream);
+                }
+            }
+
+            Product product = new Product()
+            {
+                Id = request.Id,
+                Name = request.Name,
+                Description = request.Description,
+                Price = request.Price,
+                Discount = request.Discount,
+                IS_POPULER = bool.Parse(request.IS_POPULER.ToString()),
+                StockQuantity = request.StockQuantity,
                 URL = request.URL,
                 CREATED_DATE = DateTimeOffset.UtcNow,
                 Category = _context.Categories.FirstOrDefault(x=>x.Id == request.CategoryId),
                 Brand = _context.Brands.FirstOrDefault(x => x.Id == request.BrandId),
-                Color = _context.Colors.FirstOrDefault(x => x.Id == request.ColorId),
                 Kind = _context.Kinds.FirstOrDefault(x => x.Id == request.KindId),
-                Image = request.Image
+                Color = _context.Colors.FirstOrDefault(x => x.Id == request.ColorId),
+                Image = fileName
             };
 
             if (ModelState.IsValid)
@@ -194,8 +245,8 @@ namespace BiHome.Areas.Admin.Controllers
 
                 return RedirectToAction("Index", _context.Products.ToList());
             }
-
             return View(request);
         }
+
     }
 }

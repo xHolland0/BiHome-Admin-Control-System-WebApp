@@ -2,7 +2,7 @@
     ViewData["Title"] = "Index";
 }
 
-@model VM_Product
+@model VM_EditProduct
 
 
 <div class="mt-5">
@@ -31,11 +31,10 @@
         </tr>
     </thead>
     <tbody>
-
-        <tr>
             @foreach (var product in Model.Products)
             {
-                <th scope="row">1</th>
+        <tr>
+                <th scope="row">@product.Id</th>
                 <td>@product.Name</td>
                 <td>@product.Description</td>
                 <td>@product.Price TL</td>
@@ -50,9 +49,9 @@
                 <td>@product.ColorId</td>
 
                 <td><a> @Html.ActionLink("Sil", "Delete", new { id = product.Id }, new { @class = "btn bg-danger", onclick = "return confirm('Gerçekten silmek istiyor musunuz?')" })</a></td>
-                <td><a class="btn bg-warning" asp-controller="Product" asp-action="Update">Güncelle</a></td>
-            }
+                <td><a class="btn bg-warning" asp-controller="Product" asp-action="Update" asp-route-id="@product.Id">Güncelle</a></td>
         </tr>
+        }
 
 
     </tbody>

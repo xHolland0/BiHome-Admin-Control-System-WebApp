@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewData["Title"] = "Shop";
+}
+
+@model VM_Shop
+
+<div class="hero">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-5">
+				<div class="intro-excerpt">
+					<h1>Alışverişe Hızlıca Başla<span clsas="d-block"></span></h1>
+					<p class="mb-4">
+						Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+						vulputate velit imperdiet dolor tempor tristique.
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-7">
+				<div class="hero-img-wrap">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Hero Section -->
+
+
+
+<div class="untree_co-section product-section before-footer-section">
+	<div class="container">
+		<div class="filtre d-flex gap-4">
+			<div class="btn-group mb-5">
+				<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					Sırala
+				</button>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">En Çok Satanlar</a></li>
+					<li><a class="dropdown-item" href="#">Düşükten Yükseğe Fiyat</a></li>
+					<li><a class="dropdown-item" href="#">Yüksenten Düşüğe Fiyat</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">Varsayılan Sıralama</a></li>
+				</ul>
+			</div>
+
+
+			<div class="btn-group mb-5">
+				<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					Kategori
+				</button>
+				<ul class="dropdown-menu">
+					@foreach (var kind in Model.Kinds)
+					{
+						<li><a class="dropdown-item" href="#">@kind.Name</a></li>
+					}
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">Varsayılan Sıralama</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="row">
+
+			<!-- Start Column 1 -->
+
+			@foreach (var product in Model.Products)
+			{
+				<div class="col-12 col-md-4 col-lg-3 mb-5">
+
+					@if (product.Discount != 0)
+					{
+						<span class="alert alert-success position-relative " role="alert">@product.Discount %</span>
+					}
+
+
+
+					<a class="product-item" asp-controller="Home" asp-action="Detail" asp-route-id="@product.Id" >
+						<img src="~/Image/ProductImages/@product.Image" class="img-fluid product-thumbnail">
+						<h3 class="product-title">@product.Name</h3>
+
+						<strong class="product-price">
+							₺@(product.Price - ((product.Price * product.Discount) / 100))
+						</strong>
+
+							@if (product.Discount != 0)
+							{
+								<del style="font-size:15px; ">$@product.Price</del>
+							}
+
+						<span class="icon-cross">
+							<img src="~/Image/cross.svg" class="img-fluid">
+						</span>
+					</a>
+				</div>
+			}
+			<!-- End Column 1 -->
+
+
+		</div>
+	</div>
+</div>

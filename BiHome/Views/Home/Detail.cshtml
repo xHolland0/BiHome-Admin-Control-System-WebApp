@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Detail";
+}
+
+@model VM_ProductDetail
+
+<!-- Start Why Choose Us Section -->
+<div class="why-choose-section">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-5">
+				<div class="img-wrap">
+					<img src="~/Image/ProductImages/@Model.Product.Image" alt="Image" class="img-fluid">
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<h2 class="section-title fw-bold">@Model.Product.Name</h2>
+				<p>
+					@Model.Product.Description
+				</p>
+
+				<h2 class="section-title fw-bolder mt-3">₺@(@Model.Product.Price - ((@Model.Product.Price * @Model.Product.Discount) / 100)) <span class="discount">10%</span></h2>
+
+				@if (@Model.Product.Discount != 0)
+				{
+					<h6 class="text-decoration-line-through mt-3 mb-4">₺@Model.Product.Price</h6>
+				}
+				<button type="button" class="btn btn-secondary"><i class="fa-solid fa-cart-shopping"></i> Sepete Ekle</button>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+<!-- End Why Choose Us Section -->
