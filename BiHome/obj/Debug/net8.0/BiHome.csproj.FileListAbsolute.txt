@@ -263,10 +263,10 @@ C:\Users\okanc\OneDrive\Masaüstü\Git Uploads\BiHome-Admin-Control-System-WebAp
 C:\Users\okanc\OneDrive\Masaüstü\Git Uploads\BiHome-Admin-Control-System-WebApp\BiHome\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\okanc\OneDrive\Masaüstü\Git Uploads\BiHome-Admin-Control-System-WebApp\BiHome\obj\Debug\net8.0\scopedcss\bundle\BiHome.styles.css
 C:\Users\okanc\OneDrive\Masaüstü\Git Uploads\BiHome-Admin-Control-System-WebApp\BiHome\obj\Debug\net8.0\scopedcss\projectbundle\BiHome.bundle.scp.css
-C:\Users\okanc\OneDrive\Masaüstü\Git Uploads\BiHome-Admin-Control-System-WebApp\BiHome\obj\Debug\net8.0\BiHome.csproj.CopyComplete
 C:\Users\okanc\OneDrive\Masaüstü\Git Uploads\BiHome-Admin-Control-System-WebApp\BiHome\obj\Debug\net8.0\BiHome.dll
 C:\Users\okanc\OneDrive\Masaüstü\Git Uploads\BiHome-Admin-Control-System-WebApp\BiHome\obj\Debug\net8.0\refint\BiHome.dll
 C:\Users\okanc\OneDrive\Masaüstü\Git Uploads\BiHome-Admin-Control-System-WebApp\BiHome\obj\Debug\net8.0\BiHome.pdb
 C:\Users\okanc\OneDrive\Masaüstü\Git Uploads\BiHome-Admin-Control-System-WebApp\BiHome\obj\Debug\net8.0\BiHome.genruntimeconfig.cache
 C:\Users\okanc\OneDrive\Masaüstü\Git Uploads\BiHome-Admin-Control-System-WebApp\BiHome\obj\Debug\net8.0\ref\BiHome.dll
 C:\Users\okanc\OneDrive\Masaüstü\Git Uploads\BiHome-Admin-Control-System-WebApp\BiHome\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\okanc\OneDrive\Masaüstü\Git Uploads\BiHome-Admin-Control-System-WebApp\BiHome\obj\Debug\net8.0\BiHome.csproj.Up2Date

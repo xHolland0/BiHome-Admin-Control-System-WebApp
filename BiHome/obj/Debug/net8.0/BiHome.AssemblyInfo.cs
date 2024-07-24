@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BiHome")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e86bd26bdbef172859d4d060900c6b302ba1372a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BiHome")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BiHome")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

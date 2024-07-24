@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "owR/Jx9D2x1BZDnk6AP2SAdrlfA9FKpdTgiM0AMZkCg=",
+  "Hash": "FyZpk6usoS4amovHLYKUdpR/6lD6wWXWb9vYn/EtZY4=",
   "Source": "BiHome",
   "BasePath": "_content/BiHome",
   "Mode": "Default",
@@ -2333,6 +2333,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Image\\ProductImages\\1641ee8d-de6a-4154-82b1-b1e76c8daa0e.webp"
+    },
+    {
+      "Identity": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\wwwroot\\Image\\ProductImages\\2f6d3ace-a3a6-4cf6-8d47-a00ae546f2c7.png",
+      "SourceId": "BiHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\wwwroot\\",
+      "BasePath": "_content/BiHome",
+      "RelativePath": "Image/ProductImages/2f6d3ace-a3a6-4cf6-8d47-a00ae546f2c7.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\ProductImages\\2f6d3ace-a3a6-4cf6-8d47-a00ae546f2c7.png"
     },
     {
       "Identity": "C:\\Users\\okanc\\OneDrive\\Masaüstü\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\wwwroot\\Image\\ProductImages\\ac66e24a-0f43-4149-a032-d8f34768fb27.webp",

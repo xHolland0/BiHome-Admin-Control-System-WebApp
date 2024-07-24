@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\okanc\\OneDrive\\Masa\u00FCst\u00FC\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8591EB5-A2FB-4402-BF81-D279A04594F1}|BiHome\\BiHome.csproj|c:\\users\\okanc\\onedrive\\masa\u00FCst\u00FC\\git uploads\\bihome-admin-control-system-webapp\\bihome\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8591EB5-A2FB-4402-BF81-D279A04594F1}|BiHome\\BiHome.csproj|solutionrelative:bihome\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8591EB5-A2FB-4402-BF81-D279A04594F1}|BiHome\\BiHome.csproj|c:\\users\\okanc\\onedrive\\masa\u00FCst\u00FC\\git uploads\\bihome-admin-control-system-webapp\\bihome\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8591EB5-A2FB-4402-BF81-D279A04594F1}|BiHome\\BiHome.csproj|solutionrelative:bihome\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8591EB5-A2FB-4402-BF81-D279A04594F1}|BiHome\\BiHome.csproj|c:\\users\\okanc\\onedrive\\masa\u00FCst\u00FC\\git uploads\\bihome-admin-control-system-webapp\\bihome\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8591EB5-A2FB-4402-BF81-D279A04594F1}|BiHome\\BiHome.csproj|solutionrelative:bihome\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8591EB5-A2FB-4402-BF81-D279A04594F1}|BiHome\\BiHome.csproj|c:\\users\\okanc\\onedrive\\masa\u00FCst\u00FC\\git uploads\\bihome-admin-control-system-webapp\\bihome\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8591EB5-A2FB-4402-BF81-D279A04594F1}|BiHome\\BiHome.csproj|solutionrelative:bihome\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{47f394f3-cc54-425c-8535-9431294743e3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0dce33fe-9cc9-47b5-bb1e-08fe5a4a3750}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\okanc\\OneDrive\\Masa\u00FCst\u00FC\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "BiHome\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\okanc\\OneDrive\\Masa\u00FCst\u00FC\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\Controllers\\UserController.cs",
+              "RelativeToolTip": "BiHome\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAcwA0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T12:03:06.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\okanc\\OneDrive\\Masa\u00FCst\u00FC\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BiHome\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\okanc\\OneDrive\\Masa\u00FCst\u00FC\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BiHome\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T12:02:58.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\okanc\\OneDrive\\Masa\u00FCst\u00FC\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "BiHome\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\okanc\\OneDrive\\Masa\u00FCst\u00FC\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "BiHome\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T12:02:57.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Footer.cshtml",
+              "DocumentMoniker": "C:\\Users\\okanc\\OneDrive\\Masa\u00FCst\u00FC\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\Views\\Shared\\_Footer.cshtml",
+              "RelativeDocumentMoniker": "BiHome\\Views\\Shared\\_Footer.cshtml",
+              "ToolTip": "C:\\Users\\okanc\\OneDrive\\Masa\u00FCst\u00FC\\Git Uploads\\BiHome-Admin-Control-System-WebApp\\BiHome\\Views\\Shared\\_Footer.cshtml",
+              "RelativeToolTip": "BiHome\\Views\\Shared\\_Footer.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-01T20:50:56.621Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
